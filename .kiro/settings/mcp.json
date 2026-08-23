@@ -1,0 +1,20 @@
+{
+  "mcpServers": {
+    "servidor-chile-datos-publicos": {
+      "command": "uv",
+      "args": [
+        "--directory",
+        "mcp-server",
+        "run",
+        "main.py"
+      ],
+      "disabled": false,
+      "autoApprove": [
+        "search_datasets",
+        "list_dataset_resource",
+        "preview_resource",
+        "get_resource_data"
+      ]
+    }
+  }
+}

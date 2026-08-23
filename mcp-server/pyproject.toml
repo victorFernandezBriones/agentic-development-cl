@@ -1,0 +1,13 @@
+[project]
+name = "mcp-server-datos-cl"
+version = "0.1.0"
+description = "MCP server que expone datos del Portal de Datos Abiertos de Chile (datos.gob.cl) a Kiro"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "fastmcp>=3.4.7",
+    "httpx>=0.28.0",
+    "pandas>=2.2.0",
+    "openpyxl>=3.1.0",
+    "python-dotenv>=1.0.0",
+]

@@ -1,0 +1,19 @@
+# Entornos virtuales
+.venv/
+**/.venv/
+
+# Variables de entorno (usar .env.example como plantilla)
+.env
+**/.env
+
+# Archivos generados por Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+
+# Sistema operativo
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log

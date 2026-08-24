@@ -53,6 +53,8 @@ else
 fi
 
 echo ""
-ok "Instalación completa."
+ok "Instalación completa. El servidor MCP ya está listo y configurado."
 echo ""
-info "Siguiente paso: configura el MCP en Kiro siguiendo GUIA-KIRO.md"
+info "Único paso restante: abre esta carpeta en Kiro (File → Open Folder)."
+info "Kiro detectará el servidor MCP automáticamente. Verifica en el panel 'MCP Servers'."
+info "Detalles y ejemplos en README.md"

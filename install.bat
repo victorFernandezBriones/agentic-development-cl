@@ -46,6 +46,8 @@ if not %ERRORLEVEL%==0 (
 echo [ok] El server importa y registra las tools correctamente.
 
 echo.
-echo [ok] Instalacion completa.
-echo [info] Siguiente paso: configura el MCP en Kiro siguiendo GUIA-KIRO.md
+echo [ok] Instalacion completa. El servidor MCP ya esta listo y configurado.
+echo [info] Unico paso restante: abre esta carpeta en Kiro (File -^> Open Folder).
+echo [info] Kiro detectara el servidor MCP automaticamente. Verifica en el panel 'MCP Servers'.
+echo [info] Detalles y ejemplos en README.md
 endlocal

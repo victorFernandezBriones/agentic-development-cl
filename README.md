@@ -44,11 +44,16 @@ Bienvenido/a 👋 En este taller vas a construir una aplicación que consume
 
 ## ✅ Requisitos
 
-| | Requisito | Cómo verificar |
+| | Requisito | Cómo obtenerlo / verificar |
 |---|---|---|
-| 1️⃣ | **Kiro** instalado | Ábrelo. Si abre, listo. |
+| 1️⃣ | **Kiro** instalado | ⬇️ Descárgalo en **[kiro.dev/downloads](https://kiro.dev/downloads/)** |
 | 2️⃣ | **Git** instalado | En terminal: `git --version` |
 | 3️⃣ | **Internet** | Necesario para consultar datos.gob.cl |
+
+> ⚠️ **Antes de continuar, asegúrate de tener [Kiro](https://kiro.dev/downloads/)
+> instalado.** Es la herramienta central del taller: sin Kiro no podrás realizar
+> los ejercicios. Descárgalo gratis desde **https://kiro.dev/downloads/** e
+> instálalo para tu sistema operativo (macOS, Windows o Linux).
 
 > ℹ️ **No necesitas** instalar Python ni otras librerías a mano. El script de
 > instalación se encarga de todo.
@@ -78,11 +83,15 @@ cd agentic-development-cl
 ./install.sh
 ```
 
-▶️ **Windows:**
+▶️ **Windows** — abre **Símbolo del sistema (cmd)** en esta carpeta y ejecuta:
 
 ```bat
-install.bat
+.\install.bat
 ```
+
+> 💡 Usa **cmd**, no PowerShell. Si acabas de instalar `uv` por primera vez y el
+> script falla al encontrarlo, **cierra y reabre cmd** y ejecuta `.\install.bat`
+> de nuevo.
 
 ⏳ Espera a que termine. Debe aparecer:
 

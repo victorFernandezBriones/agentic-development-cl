@@ -19,18 +19,23 @@ ok()    { printf "\033[0;32m[ok]\033[0m %s\n" "$1"; }
 warn()  { printf "\033[0;33m[warn]\033[0m %s\n" "$1"; }
 err()   { printf "\033[0;31m[error]\033[0m %s\n" "$1" >&2; }
 
-# 1. Verificar / instalar uv
+# 1. Verificar / instalar uv (idempotente: soporta reejecuciones)
+# uv se instala en ~/.local/bin, que puede no estar en el PATH de esta sesión.
+# Lo agregamos preventivamente para detectar instalaciones previas.
+export PATH="$HOME/.local/bin:$PATH"
+
 if command -v uv >/dev/null 2>&1; then
     ok "uv ya está instalado ($(uv --version))"
 else
     info "uv no encontrado. Instalando..."
     curl -LsSf https://astral.sh/uv/install.sh | sh
-    # uv se instala en ~/.local/bin; agregarlo al PATH de esta sesión.
+    # Reafirmar el PATH por si el instalador usó otra ubicación.
     export PATH="$HOME/.local/bin:$PATH"
     if command -v uv >/dev/null 2>&1; then
         ok "uv instalado ($(uv --version))"
     else
         err "No se pudo instalar uv. Instálalo manualmente: https://docs.astral.sh/uv/getting-started/installation/"
+        err "Si ya lo instalaste, cierra y reabre la terminal y vuelve a ejecutar ./install.sh"
         exit 1
     fi
 fi
